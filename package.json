@@ -1,0 +1,23 @@
+{
+  "name": "emotion-layout",
+  "version": "1.0.0",
+  "description": "Flexbox layout system built on emotion and grid-styled",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/browniefed/emotion-layout.git"
+  },
+  "keywords": [
+    "emotion",
+    "css-in-js"
+  ],
+  "author": "browniefed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/browniefed/emotion-layout/issues"
+  },
+  "homepage": "https://github.com/browniefed/emotion-layout#readme"
+}
