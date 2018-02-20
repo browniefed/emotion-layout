@@ -1,6 +1,6 @@
 {
   "name": "emotion-layout",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Flexbox layout system built on emotion and grid-styled",
   "main": "index.js",
   "scripts": {
