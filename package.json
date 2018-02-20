@@ -19,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/browniefed/emotion-layout/issues"
   },
-  "homepage": "https://github.com/browniefed/emotion-layout#readme"
+  "homepage": "https://github.com/browniefed/emotion-layout#readme",
+  "dependencies": {
+    "clean-tag": "^1.0.3",
+    "styled-system": "^2.1.0"
+  },
+  "peerDependencies": {
+    "emotion": "^9.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-emotion": "^9.0.1"
+  }
 }
