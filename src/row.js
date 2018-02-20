@@ -1,1 +1,2 @@
-export { default as Row } from "./box";
+import Box from "./box";
+export default Box;
