@@ -1,8 +1,6 @@
 import Box from "./box";
 import styled from "react-emotion";
 
-const Column = styled(Box)
-
 const Column = ({ shrink, ...props}) => {
   return <Box
     {...props}
