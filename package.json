@@ -2,9 +2,9 @@
   "name": "emotion-layout",
   "version": "0.1.0",
   "description": "Flexbox layout system built on emotion and grid-styled",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/browniefed/emotion-layout#readme",
   "dependencies": {
+    "babel-plugin-emotion": "^9.0.1",
     "clean-tag": "^1.0.3",
     "styled-system": "^2.1.0"
   },
@@ -29,5 +30,13 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-emotion": "^9.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0"
   }
 }
