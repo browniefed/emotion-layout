@@ -19,14 +19,15 @@ order,
 ```
 
 ### Row
-Flex component that's 100% width by default.
+
+Flex component that's `display: "flex"` and 100% width by default.
 
 ### Col
 
-Flex Row component
+The Col is the `Row` component with 3 special props. It sets `flexBasis` and `maxWidth` to the width, and has a shrink option.
 
 ```
- flexBasis={props.flexBasis || props.width}
-    maxWidth={props.maxWidth || props.width}
-    flex={props => (shrink ? "1 1 auto" : "1 0 auto")}
+flexBasis={props.flexBasis || props.width}
+maxWidth={props.maxWidth || props.width}
+flex={props => (shrink ? "1 1 auto" : "1 0 auto")}
 ```
