@@ -31,7 +31,7 @@ const minWidth = responsiveStyle({
   getter: getWidth,
 });
 
-const Box = styled(tag)(
+const Div = styled(tag)(
   [],
   display,
   flexWrap,
@@ -47,6 +47,8 @@ const Box = styled(tag)(
   flex,
   order,
 );
+
+const Box = props => <Div {...props} />;
 
 Box.defaultProps = { display: "flex", width: 1 };
 Box.displayName = "Box";
