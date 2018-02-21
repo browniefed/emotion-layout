@@ -48,11 +48,8 @@ const Box = styled(tag)(
   order,
 );
 
+Box.defaultProps = { display: "flex", width: 1 };
 Box.displayName = "Box";
-
-Box.defaultProps = {
-  display: "flex",
-};
 
 Box.propTypes = {
   ...flexWrap.propTypes,
