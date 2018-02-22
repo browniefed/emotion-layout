@@ -26,7 +26,7 @@ const maxWidth = responsiveStyle({
 });
 
 const flexBasis = responsiveStyle({
-  prop: "flexBasis,
+  prop: "flexBasis",
   key: "flexBasis",
   getter: getWidth,
 });
