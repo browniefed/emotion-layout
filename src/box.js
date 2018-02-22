@@ -8,7 +8,6 @@ import {
   fontSize,
   order,
   responsiveStyle,
-  flexBasis,
   util,
   flexWrap,
   flexDirection,
@@ -23,6 +22,12 @@ const getWidth = n => (!util.num(n) || n > 1 ? util.px(n) : n * 100 + "%");
 const maxWidth = responsiveStyle({
   prop: "maxWidth",
   key: "maxWidths",
+  getter: getWidth,
+});
+
+const flexBasis = responsiveStyle({
+  prop: "flexBasis,
+  key: "flexBasis",
   getter: getWidth,
 });
 
