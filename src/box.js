@@ -8,6 +8,7 @@ import {
   fontSize,
   order,
   responsiveStyle,
+  flexBasis,
   util,
   flexWrap,
   flexDirection,
@@ -35,6 +36,7 @@ const Div = styled(tag)(
   [],
   display,
   flexWrap,
+  flexBasis,
   flexDirection,
   alignItems,
   justifyContent,
@@ -54,6 +56,7 @@ Box.defaultProps = { display: "flex", width: 1 };
 Box.displayName = "Box";
 
 Box.propTypes = {
+  ...flexBasis.propTypes,
   ...flexWrap.propTypes,
   ...flexDirection.propTypes,
   ...alignItems.propTypes,
