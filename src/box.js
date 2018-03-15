@@ -14,6 +14,7 @@ import {
   alignItems,
   justifyContent,
   display,
+  flexBasis
 } from "styled-system";
 import tag from "clean-tag";
 
@@ -22,12 +23,6 @@ const getWidth = n => (!util.num(n) || n > 1 ? util.px(n) : n * 100 + "%");
 const maxWidth = responsiveStyle({
   prop: "maxWidth",
   key: "maxWidths",
-  getter: getWidth,
-});
-
-const flexBasis = responsiveStyle({
-  prop: "flexBasis",
-  key: "flexBasis",
   getter: getWidth,
 });
 
@@ -41,8 +36,8 @@ const Div = styled(tag)(
   [],
   display,
   flexWrap,
-  flexBasis,
   flexDirection,
+  flexBasis,
   alignItems,
   justifyContent,
   width,
