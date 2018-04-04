@@ -27,7 +27,7 @@ CleanSpan.propTypes = {
   ...propTypes.textStyle,
   ...propTypes.colorStyle,
 };
-export const Text = styled(CleanSpan)(
+const Text = styled(CleanSpan)(
   [],
   fontSize,
   color,
@@ -40,3 +40,5 @@ export const Text = styled(CleanSpan)(
   textStyle,
   colorStyle,
 );
+
+export default Text;

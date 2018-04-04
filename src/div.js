@@ -7,4 +7,5 @@ CleanDiv.propTypes = {
   ...propTypes.space,
   ...propTypes.display,
 };
-export const Div = styled(CleanDiv)([], space, display);
+const Div = styled(CleanDiv)([], space, display);
+export default Div;

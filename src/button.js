@@ -31,7 +31,7 @@ CleanButton.propTypes = {
   ...propTypes.colorStyle,
   ...propTypes.bgColor,
 };
-export const Button = styled(CleanButton)(
+const Button = styled(CleanButton)(
   [],
   fontSize,
   color,
@@ -46,3 +46,5 @@ export const Button = styled(CleanButton)(
   colorStyle,
   bgColor,
 );
+
+export default Button;
