@@ -16,8 +16,6 @@ import {
 import cleanElement from "clean-element";
 import styled from "react-emotion";
 
-import { darken } from "polished";
-
 const CleanButton = cleanElement("button");
 CleanButton.propTypes = {
   ...propTypes.fontSize,
