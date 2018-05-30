@@ -52,7 +52,7 @@ const Div = styled(tag)(
 
 const Box = props => <Div {...props} />;
 
-Box.defaultProps = { display: "flex", width: 1 };
+Box.defaultProps = { display: "flex" };
 Box.displayName = "Box";
 
 Box.propTypes = {

@@ -5,7 +5,23 @@ import styled from "react-emotion";
 const CleanDiv = cleanElement("div");
 CleanDiv.propTypes = {
   ...propTypes.space,
-  ...propTypes.display,
+  ...width.propTypes,
+  ...maxWidth.propTypes,
+  ...minWidth.propTypes,
+  ...space.propTypes,
+  ...fontSize.propTypes,
+  ...color.propTypes,
+  ...display.propTypes
 };
-const Div = styled(CleanDiv)([], space, display);
+const Div = styled(CleanDiv)(
+  [],
+  space,
+  display,
+  width,
+  minWidth,
+  maxWidth,
+  fontSize,
+  color
+);
+
 export default Div;
