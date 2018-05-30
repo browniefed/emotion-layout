@@ -1,4 +1,4 @@
-import { space, display, propTypes } from "styled-system";
+import { space, display, propTypes, position } from "styled-system";
 import cleanElement from "clean-element";
 import styled from "react-emotion";
 
@@ -11,7 +11,8 @@ CleanDiv.propTypes = {
   ...space.propTypes,
   ...fontSize.propTypes,
   ...color.propTypes,
-  ...display.propTypes
+  ...display.propTypes,
+  ...position.propTypes
 };
 const Div = styled(CleanDiv)(
   [],
@@ -21,7 +22,8 @@ const Div = styled(CleanDiv)(
   minWidth,
   maxWidth,
   fontSize,
-  color
+  color,
+  position
 );
 
 export default Div;

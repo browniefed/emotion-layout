@@ -14,7 +14,8 @@ import {
   alignItems,
   justifyContent,
   display,
-  flexBasis
+  flexBasis,
+  position
 } from "styled-system";
 import tag from "clean-tag";
 
@@ -23,13 +24,13 @@ const getWidth = n => (!util.num(n) || n > 1 ? util.px(n) : n * 100 + "%");
 const maxWidth = responsiveStyle({
   prop: "maxWidth",
   key: "maxWidths",
-  getter: getWidth,
+  getter: getWidth
 });
 
 const minWidth = responsiveStyle({
   prop: "minWidth",
   key: "minWidths",
-  getter: getWidth,
+  getter: getWidth
 });
 
 const Div = styled(tag)(
@@ -48,6 +49,7 @@ const Div = styled(tag)(
   color,
   flex,
   order,
+  position,
 );
 
 const Box = props => <Div {...props} />;
@@ -70,6 +72,7 @@ Box.propTypes = {
   ...flex.propTypes,
   ...order.propTypes,
   ...display.propTypes,
+  ...position.propTypes,
 };
 
 export default Box;
