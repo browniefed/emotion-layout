@@ -10,26 +10,17 @@ import {
 } from "styled-system";
 import cleanElement from "clean-element";
 import styled from "react-emotion";
+import { maxWidth, maxHeight, minHeight, minWidth, height } from "./utils";
 
-const getWidth = n => (!util.num(n) || n > 1 ? util.px(n) : n * 100 + "%");
-
-const maxWidth = responsiveStyle({
-  prop: "maxWidth",
-  key: "maxWidths",
-  getter: getWidth
-});
-
-const minWidth = responsiveStyle({
-  prop: "minWidth",
-  key: "minWidths",
-  getter: getWidth
-});
 
 const CleanDiv = cleanElement("div");
 CleanDiv.propTypes = {
   ...width.propTypes,
   ...maxWidth.propTypes,
   ...minWidth.propTypes,
+  ...height.propTypes,
+  ...maxHeight.propTypes,
+  ...minHeight.propTypes,
   ...space.propTypes,
   ...fontSize.propTypes,
   ...color.propTypes,
@@ -43,6 +34,9 @@ const Div = styled(CleanDiv)(
   width,
   minWidth,
   maxWidth,
+  minHeight,
+  maxHeight,
+  height,
   fontSize,
   color,
   position
