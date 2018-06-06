@@ -1,3 +1,5 @@
+import { responsiveStyle, util } from "styled-system";
+
 export const getSize = n =>
   !util.num(n) || n > 1 ? util.px(n) : n * 100 + "%";
 

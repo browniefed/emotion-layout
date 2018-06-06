@@ -7,8 +7,6 @@ import {
   color,
   fontSize,
   order,
-  responsiveStyle,
-  util,
   flexWrap,
   flexDirection,
   alignItems,

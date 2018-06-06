@@ -3,8 +3,6 @@ import {
   width,
   color,
   fontSize,
-  responsiveStyle,
-  util,
   display,
   position
 } from "styled-system";
