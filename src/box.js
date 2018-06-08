@@ -13,11 +13,12 @@ import {
   justifyContent,
   display,
   flexBasis,
-  position
+  position,
+  borders,
+  borderColor
 } from "styled-system";
 import tag from "clean-tag";
 import { maxWidth, maxHeight, minHeight, minWidth, height } from "./utils";
-
 
 const Div = styled(tag)(
   [],
@@ -39,6 +40,8 @@ const Div = styled(tag)(
   flex,
   order,
   position,
+  borders,
+  borderColor
 );
 
 const Box = props => <Div {...props} />;
@@ -65,6 +68,8 @@ Box.propTypes = {
   ...order.propTypes,
   ...display.propTypes,
   ...position.propTypes,
+  ...borders.propTypes,
+  ...borderColor.propTypes
 };
 
 export default Box;

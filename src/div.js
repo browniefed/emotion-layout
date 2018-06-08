@@ -4,12 +4,13 @@ import {
   color,
   fontSize,
   display,
-  position
+  position,
+  borders,
+  borderColor
 } from "styled-system";
 import cleanElement from "clean-element";
 import styled from "react-emotion";
 import { maxWidth, maxHeight, minHeight, minWidth, height } from "./utils";
-
 
 const CleanDiv = cleanElement("div");
 CleanDiv.propTypes = {
@@ -23,7 +24,9 @@ CleanDiv.propTypes = {
   ...fontSize.propTypes,
   ...color.propTypes,
   ...display.propTypes,
-  ...position.propTypes
+  ...position.propTypes,
+  ...borders.propTypes,
+  ...borderColor.propTypes
 };
 const Div = styled(CleanDiv)(
   [],
@@ -37,7 +40,9 @@ const Div = styled(CleanDiv)(
   height,
   fontSize,
   color,
-  position
+  position,
+  borders,
+  borderColor
 );
 
 export default Div;
