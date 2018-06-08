@@ -18,9 +18,8 @@ import {
   borderTop,
   borderRight,
   borderBottom,
-  borderTop,
-  borderColor,
-  borderLeft
+  borderLeft,
+  borderColor
 } from "styled-system";
 import tag from "clean-tag";
 import {

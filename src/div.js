@@ -9,9 +9,8 @@ import {
   borderTop,
   borderRight,
   borderBottom,
-  borderTop,
-  borderColor,
-  borderLeft
+  borderLeft,
+  borderColor
 } from "styled-system";
 import cleanElement from "clean-element";
 import styled from "react-emotion";
