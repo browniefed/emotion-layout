@@ -5,12 +5,27 @@ import {
   fontSize,
   display,
   position,
-  borders,
-  borderColor
+  border,
+  borderTop,
+  borderRight,
+  borderBottom,
+  borderTop,
+  borderColor,
+  borderLeft
 } from "styled-system";
 import cleanElement from "clean-element";
 import styled from "react-emotion";
-import { maxWidth, maxHeight, minHeight, minWidth, height } from "./utils";
+import {
+  maxWidth,
+  maxHeight,
+  minHeight,
+  minWidth,
+  height,
+  borderBottomColor,
+  borderTopColor,
+  borderRightColor,
+  borderLeftColor
+} from "./utils";
 
 const CleanDiv = cleanElement("div");
 CleanDiv.propTypes = {
@@ -25,7 +40,16 @@ CleanDiv.propTypes = {
   ...color.propTypes,
   ...display.propTypes,
   ...position.propTypes,
-  ...borders.propTypes,
+  ...border.propTypes,
+  ...borderTop.propTypes,
+  ...borderLeft.propTypes,
+  ...borderRight.propTypes,
+  ...borderBottom.propTypes,
+  ...borderColor.propTypes,
+  ...borderBottomColor.propTypes,
+  ...borderTopColor.propTypes,
+  ...borderRightColor.propTypes,
+  ...borderLeftColor.propTypes,
   ...borderColor.propTypes
 };
 const Div = styled(CleanDiv)(
@@ -41,8 +65,16 @@ const Div = styled(CleanDiv)(
   fontSize,
   color,
   position,
-  borders,
-  borderColor
+  border,
+  borderTop,
+  borderLeft,
+  borderRight,
+  borderBottom,
+  borderColor,
+  borderBottomColor,
+  borderTopColor,
+  borderRightColor,
+  borderLeftColor
 );
 
 export default Div;

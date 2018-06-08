@@ -32,3 +32,22 @@ export const maxHeight = responsiveStyle({
   key: "maxHeights",
   getter: getSize
 });
+
+export const borderLeftColor = responsiveStyle({
+  prop: "borderLeftColor",
+  key: "colors"
+});
+
+export const borderRightColor = responsiveStyle({
+  prop: "borderRightColor",
+  key: "colors"
+});
+export const borderTopColor = responsiveStyle({
+  prop: "borderTopColor",
+  key: "colors"
+});
+
+export const borderBottomColor = responsiveStyle({
+  prop: "borderBottomColor",
+  key: "colors"
+});
