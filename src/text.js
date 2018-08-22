@@ -8,25 +8,14 @@ import {
   letterSpacing,
   borders,
   textStyle,
-  colorStyle,
-  propTypes,
+  colorStyle
 } from "styled-system";
 import cleanElement from "clean-element";
 import styled from "react-emotion";
 
 const CleanSpan = cleanElement("span");
-CleanSpan.propTypes = {
-  ...propTypes.fontSize,
-  ...propTypes.color,
-  ...propTypes.space,
-  ...propTypes.textAlign,
-  ...propTypes.lineHeight,
-  ...propTypes.fontWeight,
-  ...propTypes.letterSpacing,
-  ...propTypes.borders,
-  ...propTypes.textStyle,
-  ...propTypes.colorStyle,
-};
+const CleanParagraph = cleanElement("p");
+
 const Text = styled(CleanSpan)(
   [],
   fontSize,
@@ -38,7 +27,21 @@ const Text = styled(CleanSpan)(
   letterSpacing,
   borders,
   textStyle,
-  colorStyle,
+  colorStyle
+);
+
+export const Paragraph = styled(CleanParagraph)(
+  [],
+  fontSize,
+  color,
+  space,
+  textAlign,
+  lineHeight,
+  fontWeight,
+  letterSpacing,
+  borders,
+  textStyle,
+  colorStyle
 );
 
 export default Text;

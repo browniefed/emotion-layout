@@ -21,20 +21,7 @@ const buttonStyle = variant({
 })
 
 const CleanButton = cleanElement("button");
-CleanButton.propTypes = {
-  ...propTypes.fontSize,
-  ...propTypes.color,
-  ...propTypes.space,
-  ...propTypes.textAlign,
-  ...propTypes.lineHeight,
-  ...propTypes.fontWeight,
-  ...propTypes.letterSpacing,
-  ...propTypes.borders,
-  ...propTypes.variant,
-  ...propTypes.textStyle,
-  ...propTypes.colorStyle,
-  ...propTypes.bgColor,
-};
+
 const Button = styled(CleanButton)(
   [],
   fontSize,

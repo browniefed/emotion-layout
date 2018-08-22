@@ -71,36 +71,4 @@ const Box = props => <Div {...props} />;
 Box.defaultProps = { display: "flex" };
 Box.displayName = "Box";
 
-Box.propTypes = {
-  ...flexBasis.propTypes,
-  ...flexWrap.propTypes,
-  ...flexDirection.propTypes,
-  ...alignItems.propTypes,
-  ...justifyContent.propTypes,
-  ...width.propTypes,
-  ...maxWidth.propTypes,
-  ...minWidth.propTypes,
-  ...maxHeight.propTypes,
-  ...minHeight.propTypes,
-  ...height.propTypes,
-  ...space.propTypes,
-  ...fontSize.propTypes,
-  ...color.propTypes,
-  ...flex.propTypes,
-  ...order.propTypes,
-  ...display.propTypes,
-  ...position.propTypes,
-  ...border.propTypes,
-  ...borderTop.propTypes,
-  ...borderLeft.propTypes,
-  ...borderRight.propTypes,
-  ...borderBottom.propTypes,
-  ...borderColor.propTypes,
-  ...borderBottomColor.propTypes,
-  ...borderTopColor.propTypes,
-  ...borderRightColor.propTypes,
-  ...borderLeftColor.propTypes,
-  ...borderColor.propTypes
-};
-
 export default Box;

@@ -27,30 +27,7 @@ import {
 } from "./utils";
 
 const CleanDiv = cleanElement("div");
-CleanDiv.propTypes = {
-  ...width.propTypes,
-  ...maxWidth.propTypes,
-  ...minWidth.propTypes,
-  ...height.propTypes,
-  ...maxHeight.propTypes,
-  ...minHeight.propTypes,
-  ...space.propTypes,
-  ...fontSize.propTypes,
-  ...color.propTypes,
-  ...display.propTypes,
-  ...position.propTypes,
-  ...border.propTypes,
-  ...borderTop.propTypes,
-  ...borderLeft.propTypes,
-  ...borderRight.propTypes,
-  ...borderBottom.propTypes,
-  ...borderColor.propTypes,
-  ...borderBottomColor.propTypes,
-  ...borderTopColor.propTypes,
-  ...borderRightColor.propTypes,
-  ...borderLeftColor.propTypes,
-  ...borderColor.propTypes
-};
+
 const Div = styled(CleanDiv)(
   [],
   space,
