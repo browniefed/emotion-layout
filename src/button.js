@@ -7,7 +7,7 @@ import {
   fontWeight,
   letterSpacing,
   borders,
-  buttonStyle,
+  variant,
   textStyle,
   colorStyle,
   propTypes,
@@ -15,6 +15,10 @@ import {
 } from "styled-system";
 import cleanElement from "clean-element";
 import styled from "react-emotion";
+
+const buttonStyle = variant({
+  key: 'buttons'
+})
 
 const CleanButton = cleanElement("button");
 CleanButton.propTypes = {
@@ -26,7 +30,7 @@ CleanButton.propTypes = {
   ...propTypes.fontWeight,
   ...propTypes.letterSpacing,
   ...propTypes.borders,
-  ...propTypes.buttonStyle,
+  ...propTypes.variant,
   ...propTypes.textStyle,
   ...propTypes.colorStyle,
   ...propTypes.bgColor,

@@ -1,53 +1,53 @@
-import { responsiveStyle, util } from "styled-system";
+import { style, util } from "styled-system";
 
 export const getSize = n =>
   !util.num(n) || n > 1 ? util.px(n) : n * 100 + "%";
 
-export const maxWidth = responsiveStyle({
+export const maxWidth = style({
   prop: "maxWidth",
   key: "maxWidths",
-  getter: getSize
+  transformValue: getSize
 });
 
-export const minWidth = responsiveStyle({
+export const minWidth = style({
   prop: "minWidth",
   key: "minWidths",
-  getter: getSize
+  transformValue: getSize
 });
 
-export const height = responsiveStyle({
+export const height = style({
   prop: "height",
   key: "heights",
-  getter: getSize
+  transformValue: getSize
 });
 
-export const minHeight = responsiveStyle({
+export const minHeight = style({
   prop: "minHeight",
   key: "minHeights",
-  getter: getSize
+  transformValue: getSize
 });
 
-export const maxHeight = responsiveStyle({
+export const maxHeight = style({
   prop: "maxHeight",
   key: "maxHeights",
-  getter: getSize
+  transformValue: getSize
 });
 
-export const borderLeftColor = responsiveStyle({
+export const borderLeftColor = style({
   prop: "borderLeftColor",
   key: "colors"
 });
 
-export const borderRightColor = responsiveStyle({
+export const borderRightColor = style({
   prop: "borderRightColor",
   key: "colors"
 });
-export const borderTopColor = responsiveStyle({
+export const borderTopColor = style({
   prop: "borderTopColor",
   key: "colors"
 });
 
-export const borderBottomColor = responsiveStyle({
+export const borderBottomColor = style({
   prop: "borderBottomColor",
   key: "colors"
 });

@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "./box";
-import styled from "react-emotion";
 
 const Column = ({ shrink, ...props }) => {
   return (
