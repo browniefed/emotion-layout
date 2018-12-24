@@ -12,7 +12,7 @@ import {
   propTypes,
 } from "styled-system";
 import cleanElement from "clean-element";
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 const CleanSpan = cleanElement("span");
 CleanSpan.propTypes = {

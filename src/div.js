@@ -1,6 +1,6 @@
 import { space, display, propTypes } from "styled-system";
 import cleanElement from "clean-element";
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 const CleanDiv = cleanElement("div");
 CleanDiv.propTypes = {

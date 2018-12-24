@@ -14,7 +14,7 @@ import {
   bgColor,
 } from "styled-system";
 import cleanElement from "clean-element";
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 const CleanButton = cleanElement("button");
 CleanButton.propTypes = {

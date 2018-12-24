@@ -21,22 +21,21 @@
   },
   "homepage": "https://github.com/browniefed/emotion-layout#readme",
   "dependencies": {
-    "clean-element": "^1.0.0",
-    "clean-tag": "^1.0.4",
-    "styled-system": "^2.2.1"
+    "@emotion/styled": "^10.0.5",
+    "clean-element": "^1.0.2",
+    "clean-tag": "^2.0.2",
+    "styled-system": "^3.1.11"
   },
   "peerDependencies": {
-    "react": "^16.2.0"
+    "react": "^16.6.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-emotion": "^10.0.5",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "emotion": "^9.1.1",
-    "react-emotion": "^9.1.1",
-    "babel-plugin-emotion": "^9.1.0"
+    "babel-register": "^6.26.0"
   }
 }
