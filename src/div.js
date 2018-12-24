@@ -1,11 +1,56 @@
-import { space, display, propTypes } from "styled-system";
+import {
+  space,
+  width,
+  color,
+  fontSize,
+  display,
+  position,
+  border,
+  borderTop,
+  borderRight,
+  borderBottom,
+  borderLeft,
+  borderColor
+} from "styled-system";
 import cleanElement from "clean-element";
 import styled from "@emotion/styled";
+import {
+  maxWidth,
+  maxHeight,
+  minHeight,
+  minWidth,
+  height,
+  borderBottomColor,
+  borderTopColor,
+  borderRightColor,
+  borderLeftColor
+} from "./utils";
 
 const CleanDiv = cleanElement("div");
-CleanDiv.propTypes = {
-  ...propTypes.space,
-  ...propTypes.display,
-};
-const Div = styled(CleanDiv)([], space, display);
+
+const Div = styled(CleanDiv)(
+  [],
+  space,
+  display,
+  width,
+  minWidth,
+  maxWidth,
+  minHeight,
+  maxHeight,
+  height,
+  fontSize,
+  color,
+  position,
+  border,
+  borderTop,
+  borderLeft,
+  borderRight,
+  borderBottom,
+  borderColor,
+  borderBottomColor,
+  borderTopColor,
+  borderRightColor,
+  borderLeftColor
+);
+
 export default Div;
